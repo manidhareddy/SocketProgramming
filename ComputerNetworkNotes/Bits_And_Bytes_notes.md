@@ -72,6 +72,8 @@ Sends data to the right appliaction on that node(port).
 Browser or any program.
 
 
+![alt text](./assert/image.png)
+
 
 ## References:-
 https://www.giac.org/paper/gsec/1417/osi-model-overview/102634
