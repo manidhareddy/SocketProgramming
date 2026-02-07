@@ -6,7 +6,7 @@ A defined set of standards that computers must follow in order to communicate pr
 ## Computer Networking 
 The name we're given to the full scope of how computers communicate with each other.
 
-## OSI Model
+## OSI Model (Open Systems Interconnection (OSI))
 
 | # | Layer name   | Protocol (examples)                 | Protocol Data Unit (PDU)            | Addressing (typical)                      |
 |:--:|:-------------|:------------------------------------|:------------------------------------|:------------------------------------------|
@@ -17,6 +17,8 @@ The name we're given to the full scope of how computers communicate with each ot
 | 3  | Network      | IP (IPv4/IPv6), ICMP                | Packet                              | IP addresses                              |
 | 2  | Data Link    | Ethernet, PPP, ARP                  | Frame                               | MAC addresses (physical/Link-layer)       |
 | 1  | Physical     | Ethernet PHY, DSL, RS-232 (examples)| Bits                                | Physical medium / electrical signals      |
+
+The OSI model defines a hierarchical architecture that logically partitions the functions required to support system-to-system communication.
 
 ## TCP Model
 
@@ -40,13 +42,18 @@ Responsible for defining a common way to interpreting these signals so network d
 ### Network layer:-
 Allows different networks to communicate with each other through devices known as routers.
 
+## Internetwork
+A collection of networks connected together through routers , the most famous of these being the internet.
+
+The physical layer deals with physical devices like cables and connectors.
+
 IP (Internet protocol) is the heart of the internet and most smaller network around the world.
 
 ### Transport layer:-
 Sorts out which client and server programs are supposed to get that data.
+Sends data to the right appliaction on that node(port).
 
-TCP - Transmission control protocol
-
+#### TCP - Transmission control protocol
  - Connection Oriented protocol.
  - First acknowledge the session between the two computers that are communicating.
  - Two computers verify a connection before any communication take place.
@@ -56,4 +63,15 @@ TCP - Transmission control protocol
  - Guarantess the delivery of the data.
  - If a data packet doesn't arrive then TCP will resend it.
 
+#### UDP - User Datagram Protocol
+- Connectionless Oriented protocol.
+- UDP is known as the "fire-and-forget" protocol.
+- UDP is faster than TCP.
 
+### Appliaction
+Browser or any program.
+
+
+
+## References:-
+https://www.giac.org/paper/gsec/1417/osi-model-overview/102634
