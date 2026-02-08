@@ -78,3 +78,9 @@ Used to connect different device types (computers/routers to hubs/switches).
 - Pins 1 & 2 - Green wires (sending)
 - Pins 3 & 6 - Orange wires (receiving)
 
+
+![alt text](./assert/rj45.png)
+
+
+The <b>Physical layer</b> consists of devices and is responsible for sending signals b/w devices.
+
